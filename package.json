@@ -1,0 +1,61 @@
+{
+  "name": "@xoxoharsh/multiparser",
+  "version": "1.0.0",
+  "description": "A Text extracting package docx, pdf and pptx files",
+  "main": "index.js",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "test": "node tests/test.js",
+    "version:patch": "npm version patch && git push && git push --tags && npm publish --access public",
+    "version:minor": "npm version minor && git push && git push --tags && npm publish --access public",
+    "version:major": "npm version major && git push && git push --tags && npm publish --access public",
+    "publish:patch": "git add . && git commit -m \"patch update\" && npm run version:patch",
+    "publish:minor": "git add . && git commit -m \"minor update\" && npm run version:minor",
+    "publish:major": "git add . && git commit -m \"major update\" && npm run version:major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajatt09/Multiparser-Package"
+  },
+  "author": "Yash Mittal, Rajat Bhati, Harsh Sharma",
+  "contributors": [
+    {
+      "name": "Yash Mittal",
+      "email": "mittalyas1234@gmail.com"
+    },
+    {
+      "name": "Rajat Bhati",
+      "email": "rajatbhati9559@gmail.com"
+    },
+    {
+      "name": "Harsh Sharma",
+      "email": "harshsharma20503@gmail.com"
+    }
+  ],
+  "keywords": [
+    "parser",
+    "docx",
+    "pdf",
+    "pptx",
+    "text-extraction",
+    "document-parser"
+  ],
+  "homepage": "https://github.com/Rajatt09/Multiparser-Package#readme",
+  "license": "ISC",
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "mammoth": "^1.8.0",
+    "pdf.js-extract": "^0.2.1",
+    "xml2js": "^0.6.2"
+  },
+  "files": [
+    "index.js",
+    "scripts/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
